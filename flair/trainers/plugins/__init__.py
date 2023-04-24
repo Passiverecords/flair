@@ -3,6 +3,7 @@ from .functional.amp import AmpPlugin
 from .functional.anneal_on_plateau import AnnealingPlugin
 from .functional.checkpoints import CheckpointPlugin
 from .functional.linear_scheduler import LinearSchedulerPlugin
+from .functional.reduce_transformer_vocab import ReduceTransformerVocabPlugin
 from .functional.weight_extractor import WeightExtractorPlugin
 from .loggers.log_file import LogFilePlugin
 from .loggers.loss_file import LossFilePlugin
@@ -24,6 +25,7 @@ __all__ = [
     "Pluggable",
     "TrainerPlugin",
     "TrainingInterrupt",
+    "ReduceTransformerVocabPlugin",
     "MetricName",
     "MetricRecord",
 ]
