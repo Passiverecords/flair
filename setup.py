@@ -16,6 +16,9 @@ setup(
     packages=find_packages(exclude="tests"),  # same as name
     license="MIT",
     install_requires=required,
+    dependency_links=[
+        "https://download.pytorch.org/whl/cpu"
+    ],
     include_package_data=True,
     python_requires=">=3.8",
 )
